@@ -1,7 +1,7 @@
 import { Cell } from "./cell.js";
 
 export class Grid {
-    constructor(gridElement, size = 30) {
+    constructor(gridElement, size = 10) {
         this.size = size;
         this.board = []
 
