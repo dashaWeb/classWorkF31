@@ -84,91 +84,91 @@
 // })
 
 
-// let url = 'https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=11'
+let url = 'https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=11'
 
-// let promise = new Promise(function (resolve, reject) {
-//     let xml = new XMLHttpRequest()
-//     xml.withCredentials = true
-//     xml.open('GET', url)
-//     xml.setRequestHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500/');
-
-//     xml.responseType = 'json'
-//     xml.send()
-
-//     xml.onload = function () {
-//         if (xml.status == 200) {
-//             resolve(xml.response)
-//         }
-//         reject('Error')
-//     }
-// })
-// promise.then(function (data) {
-//     showuser(data)
-// })
-//     .catch(function (error) {
-//         console.log(error)
-//     })
-
-
-// function showuser(data) {
-//     console.log(data)
-// }
-
-let url = `https://jsonplaceholder.typicode.com/users`;
-
-let allperson;
-
-let promisw = new Promise(function (resolve, reject) {
-
+let promise = new Promise(function (resolve, reject) {
     let xml = new XMLHttpRequest()
+    xml.withCredentials = true
+    xml.open('GET', url)
+    // xml.setRequestHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500/');
 
-    xml.open(`GET`, url)
-
-    xml.responseType = `json`
-
+    xml.responseType = 'json'
     xml.send()
 
     xml.onload = function () {
-
         if (xml.status == 200) {
-
-            allperson = xml.response;
-
-            console.log(allperson[0])
-
-            resolve(allperson)
-
+            resolve(xml.response)
         }
-
-        reject(`ERROR`)
+        reject('Error')
     }
-
 })
-
- 
-
- 
-
-promisw.then(function () {
-
- 
-
-    for (i = 0; i < allperson.lenght; i++) {
-
-        let segment = `<div class="copyriter">${allperson[i]}</div>`
-
-        // console.log(allperson)
-
- 
-
-    }
-
-    // console.log(allperson)
-
+promise.then(function (data) {
+    showuser(data)
 })
-
     .catch(function (error) {
-
         console.log(error)
-
     })
+
+
+function showuser(data) {
+    console.log(data)
+}
+
+// let url = `https://jsonplaceholder.typicode.com/users`;
+
+// let allperson;
+
+// let promisw = new Promise(function (resolve, reject) {
+
+//     let xml = new XMLHttpRequest()
+
+//     xml.open(`GET`, url)
+
+//     xml.responseType = `json`
+
+//     xml.send()
+
+//     xml.onload = function () {
+
+//         if (xml.status == 200) {
+
+//             allperson = xml.response;
+
+//             console.log(allperson[0])
+
+//             resolve(allperson)
+
+//         }
+
+//         reject(`ERROR`)
+//     }
+
+// })
+
+ 
+
+ 
+
+// promisw.then(function () {
+
+ 
+
+//     for (i = 0; i < allperson.lenght; i++) {
+
+//         let segment = `<div class="copyriter">${allperson[i]}</div>`
+
+//         // console.log(allperson)
+
+ 
+
+//     }
+
+//     // console.log(allperson)
+
+// })
+
+//     .catch(function (error) {
+
+//         console.log(error)
+
+//     })

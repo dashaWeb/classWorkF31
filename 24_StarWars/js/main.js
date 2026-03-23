@@ -31,7 +31,7 @@ function showAllPerson(data) {
     data.forEach(element => {
         let str = `<div class="card mb-3">
         <h3 class="card-header">${element.name}</h3>
-        <img src="https://starwars-visualguide.com/assets/img/characters/${element.url.match(/\/([0-9]*)\/$/)[1]}.jpg" class="d-block user-select-none">
+        <img src="https://raw.githubusercontent.com/radley/Android-OMG-Star-Wars-Demo/refs/heads/master/OMGStarWars/app/src/main/assets/people/${element.url.match(/\/([0-9]*)\/$/)[1]}.jpg" class="d-block user-select-none">
         </svg>
       </div>`
         content.insertAdjacentHTML('beforeend', str)

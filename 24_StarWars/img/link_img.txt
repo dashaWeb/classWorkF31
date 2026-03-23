@@ -1,0 +1,7 @@
+https://bootswatch.com/
+https://raw.githubusercontent.com/radley/Android-OMG-Star-Wars-Demo/refs/heads/master/OMGStarWars/app/src/main/assets/people/1.jpg
+https://raw.githubusercontent.com/radley/Android-OMG-Star-Wars-Demo/refs/heads/master/OMGStarWars/app/src/main/assets/films/1.jpg
+https://raw.githubusercontent.com/radley/Android-OMG-Star-Wars-Demo/refs/heads/master/OMGStarWars/app/src/main/assets/planets/1.jpg 
+https://raw.githubusercontent.com/radley/Android-OMG-Star-Wars-Demo/refs/heads/master/OMGStarWars/app/src/main/assets/species/1.jpg
+https://raw.githubusercontent.com/radley/Android-OMG-Star-Wars-Demo/refs/heads/master/OMGStarWars/app/src/main/assets/starships/10.jpg
+https://raw.githubusercontent.com/radley/Android-OMG-Star-Wars-Demo/refs/heads/master/OMGStarWars/app/src/main/assets/vehicles/16.jpg
